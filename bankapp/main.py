@@ -12,7 +12,7 @@ def luhn(card_number):
 
     summa = 0
 
-    for number in card_number[0::2]:
+    for number in card_number[::2]:
         if int(number) * 2 > 9:
             number = int(number) * 2 - 9
         else:
